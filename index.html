@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Coding Starter Pack | IDE</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/universal-sans-text');
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <span class="brand-accent">⚡</span> 
+            <span>Coding Starter Pack <small>PRO</small></span>
+        </div>
+        <div class="actions">
+            <button id="run-btn" class="btn-primary" title="Sila tekan untuk jalankan kod (Ctrl+Enter)">
+                Run Code
+            </button>
+            <button id="clear-btn" class="btn-secondary">Clear</button>
+        </div>
+    </header>
+
+    <main class="ide-wrapper">
+        <section class="editor-container">
+            <div class="panel" id="html-panel">
+                <div class="panel-header">
+                    <span class="tab-label">HTML</span>
+                </div>
+                <div class="code-input">
+                    <textarea id="html-code" spellcheck="false" placeholder=""></textarea>
+                </div>
+            </div>
+
+            <div class="panel" id="css-panel">
+                <div class="panel-header">
+                    <span class="tab-label">CSS</span>
+                </div>
+                <div class="code-input">
+                    <textarea id="css-code" spellcheck="false" placeholder="/* Gaya CSS anda */"></textarea>
+                </div>
+            </div>
+
+            <div class="panel" id="js-panel">
+                <div class="panel-header">
+                    <span class="tab-label">JavaScript</span>
+                </div>
+                <div class="code-input">
+                    <textarea id="js-code" spellcheck="false" placeholder="// Logik JS anda"></textarea>
+                </div>
+            </div>
+        </section>
+
+        <section class="preview-container">
+            <div class="panel-header">
+                <span class="tab-label">Live Preview</span>
+                <div class="status-indicator" id="status-dot"></div>
+            </div>
+            <div class="preview-window">
+                <iframe id="output-frame"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="status-bar">
+        <div class="status-item">Status: <span id="current-status">Ready</span></div>
+        <div class="status-item">WCAG 2.2 AA Compliant UI</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
